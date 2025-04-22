@@ -1234,6 +1234,18 @@
 			],
 			"id": "1122189-2ca4fa90-4ca2-4bea-8e6c-5cde035f3395",
 			"description": "The `/collections` endpoints let you manage your [collections](https://learning.postman.com/docs/sending-requests/intro-to-collections/)."
+		},
+		{
+			"name": "New Request",
+			"id": "1122189-15cc3add-29ba-488c-b28a-ac9a8456a860",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"auth": {
