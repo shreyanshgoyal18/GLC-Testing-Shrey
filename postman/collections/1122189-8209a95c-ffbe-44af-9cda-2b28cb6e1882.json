@@ -76,10 +76,8 @@
 									"key": "Content-Type",
 									"value": "application/json",
 									"name": "Content-Type",
-									"description": {
-										"content": "",
-										"type": "text/plain"
-									}
+									"description": "",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -112,10 +110,8 @@
 								{
 									"key": "Content-Type",
 									"value": "application/json",
-									"description": {
-										"content": "",
-										"type": "text/plain"
-									}
+									"description": "",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -229,10 +225,8 @@
 									"key": "Content-Type",
 									"value": "application/json",
 									"name": "Content-Type",
-									"description": {
-										"content": "",
-										"type": "text/plain"
-									}
+									"description": "",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -288,10 +282,8 @@
 									"key": "Content-Type",
 									"value": "application/json",
 									"name": "Content-Type",
-									"description": {
-										"content": "",
-										"type": "text/plain"
-									}
+									"description": "",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -347,7 +339,8 @@
 							"header": [
 								{
 									"key": "Content-Type",
-									"value": "application/json; charset=utf-8"
+									"value": "application/json; charset=utf-8",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -402,7 +395,8 @@
 								{
 									"key": "Content-Type",
 									"value": "application/json",
-									"description": ""
+									"description": "",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -480,10 +474,8 @@
 									"key": "Content-Type",
 									"value": "application/json",
 									"name": "Content-Type",
-									"description": {
-										"content": "",
-										"type": "text/plain"
-									}
+									"description": "",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -523,10 +515,8 @@
 								{
 									"key": "Content-Type",
 									"value": "application/json",
-									"description": {
-										"content": "",
-										"type": "text/plain"
-									}
+									"description": "",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -651,10 +641,8 @@
 								{
 									"key": "Content-Type",
 									"value": "application/json",
-									"description": {
-										"content": "",
-										"type": "text/plain"
-									}
+									"description": "",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -689,10 +677,8 @@
 									"key": "Content-Type",
 									"value": "application/json",
 									"name": "Content-Type",
-									"description": {
-										"content": "",
-										"type": "text/plain"
-									}
+									"description": "",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -726,10 +712,8 @@
 								{
 									"key": "Content-Type",
 									"value": "application/json",
-									"description": {
-										"content": "",
-										"type": "text/plain"
-									}
+									"description": "",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -822,10 +806,8 @@
 									"key": "Content-Type",
 									"value": "application/json",
 									"name": "Content-Type",
-									"description": {
-										"content": "",
-										"type": "text/plain"
-									}
+									"description": "",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -873,10 +855,8 @@
 								{
 									"key": "Content-Type",
 									"value": "application/json",
-									"description": {
-										"content": "",
-										"type": "text/plain"
-									}
+									"description": "",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -925,10 +905,8 @@
 									"key": "Content-Type",
 									"value": "application/json",
 									"name": "Content-Type",
-									"description": {
-										"content": "",
-										"type": "text/plain"
-									}
+									"description": "",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -977,10 +955,8 @@
 									"key": "Content-Type",
 									"value": "application/json",
 									"name": "Content-Type",
-									"description": {
-										"content": "",
-										"type": "text/plain"
-									}
+									"description": "",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -1029,10 +1005,8 @@
 									"key": "Content-Type",
 									"value": "application/json",
 									"name": "Content-Type",
-									"description": {
-										"content": "",
-										"type": "text/plain"
-									}
+									"description": "",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -1080,10 +1054,8 @@
 								{
 									"key": "Content-Type",
 									"value": "application/json",
-									"description": {
-										"content": "",
-										"type": "text/plain"
-									}
+									"description": "",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -1166,10 +1138,8 @@
 								{
 									"key": "Content-Type",
 									"value": "application/json",
-									"description": {
-										"content": "",
-										"type": "text/plain"
-									}
+									"description": "",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -1209,10 +1179,8 @@
 								{
 									"key": "Content-Type",
 									"value": "application/json",
-									"description": {
-										"content": "",
-										"type": "text/plain"
-									}
+									"description": "",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -1253,10 +1221,8 @@
 								{
 									"key": "Content-Type",
 									"value": "application/json",
-									"description": {
-										"content": "",
-										"type": "text/plain"
-									}
+									"description": "",
+									"enabled": true
 								}
 							],
 							"cookie": [],
@@ -1307,7 +1273,6 @@
 	],
 	"variable": [
 		{
-			"id": "0c92381d-3631-4f88-8905-4cc36f803831",
 			"key": "baseUrl",
 			"value": "https://farming-simulator.pstmn.io"
 		}
