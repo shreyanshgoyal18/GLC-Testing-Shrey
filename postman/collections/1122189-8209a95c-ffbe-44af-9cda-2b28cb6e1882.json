@@ -29,7 +29,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://api.getpostman.com/me?foo=bark",
+							"raw": "https://api.getpostman.com/me?foo=barkk",
 							"protocol": "https",
 							"host": [
 								"api",
@@ -42,7 +42,7 @@
 							"query": [
 								{
 									"key": "foo",
-									"value": "bark"
+									"value": "barkk"
 								}
 							]
 						},
