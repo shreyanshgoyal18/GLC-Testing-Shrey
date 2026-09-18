@@ -28,4 +28,4 @@ jobs:
 
       - name: Run Collection
         run: |
-          postman collection run "postman/collections/New Collection" --report-events
+          postman collection run "postman/collections/API Documentation #referencess" --report-events
