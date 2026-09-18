@@ -5,27 +5,35 @@ on:
     branches:
       - main
   workflow_dispatch:
+
 permissions:
   contents: read
 
 jobs:
   run-tests:
-    # Exclude only pull_request; allow merge_group, workflow_dispatch, and future events
     name: Execute E2E Tests on Postman on Beta
-    runs-on: build9-arm-ubuntu-latest  # private-runner having access to new stack BETA & STAGE VPCs
+    runs-on: build9-arm-ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Install Postman CLI
-        run: curl -o- "https://dl-cli.pstmn.io/install/unix.sh" | sh
+        run: |
+          curl -o- "https://dl-cli.pstmn.io/install/unix.sh" | sh
 
       - name: Verify Postman CLI version
-        run: postman --version
+        run: |
+          postman --version
 
       - name: Login to Postman CLI
-        run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
+        run: |
+          postman login --with-api-key "${{ secrets.POSTMAN_API_KEY }}"
+
+      - name: Verify Postman CLI authentication
+        run: |
+          postman whoami
 
       - name: Run Collection
         run: |
-          postman collection run "postman/collections/API Catalog Scorecard — Severity Demo" --report-events
+          postman collection run "postman/collections/API Catalog Scorecard — Severity Demo.json" --report-events
