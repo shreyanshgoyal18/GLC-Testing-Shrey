@@ -1,0 +1,5 @@
+$kind: http-request
+url: www.example.com
+method: GET
+settings: {}
+order: 1000

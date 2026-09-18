@@ -1,0 +1,8 @@
+$kind: http-request
+description: Gets information about the authenticated user.
+url: https://api.getpostman.com/me?foo=barkk
+method: GET
+queryParams:
+  foo: barkk
+examples: ./.resources/Get authenticated user.resources/examples
+order: 1000
