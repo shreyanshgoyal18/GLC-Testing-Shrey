@@ -78,7 +78,7 @@ description: |-
 variables:
   baseUrl: https://farming-simulator.pstmn.io
 auth:
-  - id: 883492b5-0cef-4f68-8647-f8547b9bb80b
+  - id: a76cf02f-ed10-49c9-bfcc-b05602350872
     type: apikey
     name: apikey auth
     credentials:

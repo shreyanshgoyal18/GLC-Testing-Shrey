@@ -3,6 +3,8 @@ workspace:
 cloudResources:
   collections:
     ../postman/collections/New Collection: 53807457-0db450b9-4b1b-4c7d-b09a-b37c3e2c1c11
+    ../postman/collections/API Catalog Scorecard — Severity Demo: 53807457-7bbbea30-d15f-44af-a7f9-9249911a831c
+    "../postman/collections/API Documentation #referencess": 53807457-c68ae282-36b0-414e-970f-db2ded97be45
   globals:
     ../postman/globals/workspace.globals.yaml: 8f836545-2c4e-476f-88fd-71379f19b8d4
   specs:

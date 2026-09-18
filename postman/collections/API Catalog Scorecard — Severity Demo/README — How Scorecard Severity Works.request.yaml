@@ -1,0 +1,26 @@
+$kind: http-request
+description: |-
+  ## API Catalog Scorecard Severity Guide
+
+  ### Severity Thresholds (7-day rolling window)
+  | Severity | Pass Rate |
+  |---|---|
+  | CRITICAL | < 50% |
+  | HIGH | 50–69% |
+  | WARN | 70–89% |
+  | HEALTHY | ≥ 90% |
+
+  ### How to trigger each severity
+  - Run the **CRITICAL** folder via a monitor → scorecard shows CRITICAL
+  - Run the **HIGH** folder via a monitor → scorecard shows HIGH
+  - Run the **WARN** folder via a monitor → scorecard shows WARN
+  - Run the **HEALTHY** folder via a monitor → scorecard shows HEALTHY
+
+  ### Important Notes
+  - Only **monitor runs** and **CI/CD runs** (Postman CLI) are ingested by API Catalog.
+  - Manual / desktop runs are **not** counted.
+  - The workspace must be linked to a system environment in API Catalog settings.
+url: https://postman-echo.com/get
+method: GET
+settings: {}
+order: 5000

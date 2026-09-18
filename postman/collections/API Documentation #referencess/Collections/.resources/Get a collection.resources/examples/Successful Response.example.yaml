@@ -2,6 +2,11 @@ $kind: http-example
 request:
   url: https://api.getpostman.com/collections/12ece9e1-2abf-4edc-8e34-de66e74114d2
   method: GET
+  queryParams:
+    - key: access_key
+      value: "{{accessKey}}"
+      disabled: true
+      description: Optional. A collection's read-only access key. Using this query parameter does not require an API key to call the endpoint.
 response:
   statusCode: 200
   statusText: OK

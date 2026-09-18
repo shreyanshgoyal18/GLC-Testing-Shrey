@@ -1,0 +1,7 @@
+$kind: collection
+description: |-
+  Demonstrates all four API Catalog scorecard severity bands.
+
+  CRITICAL: <50% pass rate | HIGH: 50-69% | WARN: 70-89% | HEALTHY: >=90%
+
+  Run each folder via a Postman Monitor to see the corresponding severity in API Catalog. Only monitor runs and CI/CD (Postman CLI) runs are ingested — manual desktop runs are NOT counted.
