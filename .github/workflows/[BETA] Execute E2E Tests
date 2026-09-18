@@ -6,9 +6,6 @@ on:
       - main
   workflow_dispatch:
 
-permissions:
-  contents: read
-
 jobs:
   run-tests:
     name: Execute E2E Tests on Postman on Beta
