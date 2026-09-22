@@ -1,0 +1,112 @@
+{
+  "info": {
+    "_postman_id": "9c66c379-aa4d-4e41-908a-607d919332ef",
+    "name": "Shreyansh PPC Main",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "id": "98053b91-cbb8-4bea-8d86-0d6c90945a7c",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "www.example.com",
+          "host": [
+            "www",
+            "example",
+            "com"
+          ]
+        }
+      },
+      "response": [
+        {
+          "id": "b5c1d259-ab21-470a-813e-c7c63e2c0c2c",
+          "name": "New Request",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "www.example.com",
+              "host": [
+                "www",
+                "example",
+                "com"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "html",
+          "header": [
+            {
+              "key": "date",
+              "value": "Wed, 16 Sep 2026 10:45:25 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "text/html"
+            },
+            {
+              "key": "server",
+              "value": "envoy"
+            },
+            {
+              "key": "last-modified",
+              "value": "Tue, 15 Sep 2026 23:41:26 GMT"
+            },
+            {
+              "key": "allow",
+              "value": "GET, HEAD"
+            },
+            {
+              "key": "cf-cache-status",
+              "value": "HIT"
+            },
+            {
+              "key": "age",
+              "value": "4063"
+            },
+            {
+              "key": "content-encoding",
+              "value": "br"
+            },
+            {
+              "key": "cf-ray",
+              "value": "a3bf480f8b89fe57-IAD"
+            },
+            {
+              "key": "x-envoy-upstream-service-time",
+              "value": "9"
+            },
+            {
+              "key": "transfer-encoding",
+              "value": "chunked"
+            }
+          ],
+          "cookie": [],
+          "responseTime": null,
+          "body": "<!doctype html><html lang=\"en\"><head><title>Example Domain</title><link rel=\"icon\" href=\"data:,\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><style>body{background:#eee;width:60vw;margin:15vh auto;font-family:system-ui,sans-serif}h1{font-size:1.5em}div{opacity:0.8}a:link,a:visited{color:#348}</style></head><body><div><h1>Example Domain</h1><p>This domain is for use in documentation examples without needing permission. Avoid use in operations.</p><p><a href=\"https://iana.org/domains/example\">Learn more</a></p></div></body></html>\n"
+        }
+      ]
+    },
+    {
+      "name": "Example",
+      "id": "5456014c-a57a-4a12-831e-5421b1af23f6",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "www.example.com",
+          "host": [
+            "www",
+            "example",
+            "com"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

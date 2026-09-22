@@ -1,0 +1,374 @@
+{
+  "info": {
+    "_postman_id": "3598e526-eb01-4832-836d-ee345e205978",
+    "name": "API Catalog Scorecard — Severity Demo",
+    "description": "Demonstrates all four API Catalog scorecard severity bands.\n\nCRITICAL: <50% pass rate | HIGH: 50-69% | WARN: 70-89% | HEALTHY: >=90%\n\nRun each folder via a Postman Monitor to see the corresponding severity in API Catalog. Only monitor runs and CI/CD (Postman CLI) runs are ingested — manual desktop runs are NOT counted.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "CRITICAL — Less Than 50% Pass Rate",
+      "item": [
+        {
+          "name": "Test 1 — Always Fails",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Check 1 — status is 200\", function () { pm.expect(pm.response.code).to.equal(200); });",
+                  "pm.test(\"Check 2 — intentional fail\", function () { pm.expect(false).to.be.true; });",
+                  "pm.test(\"Check 3 — intentional fail\", function () { pm.expect(false).to.be.true; });",
+                  "pm.test(\"Check 4 — intentional fail\", function () { pm.expect(false).to.be.true; });"
+                ],
+                "id": "7ec3503c-86ac-4d6a-b720-10d722a44af8"
+              }
+            }
+          ],
+          "id": "b04d5abe-0fcd-4ade-92dc-1e8d1935601a",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://postman-echo.com/status/200",
+              "protocol": "https",
+              "host": [
+                "postman-echo",
+                "com"
+              ],
+              "path": [
+                "status",
+                "200"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Test 2 — Always Fails",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Check 1 — status is 200\", function () { pm.expect(pm.response.code).to.equal(200); });",
+                  "pm.test(\"Check 2 — intentional fail\", function () { pm.expect(false).to.be.true; });",
+                  "pm.test(\"Check 3 — intentional fail\", function () { pm.expect(false).to.be.true; });",
+                  "pm.test(\"Check 4 — intentional fail\", function () { pm.expect(false).to.be.true; });"
+                ],
+                "id": "a5abad1a-aff6-48c3-924b-28ba83fb5e28"
+              }
+            }
+          ],
+          "id": "280a9656-f2a9-4873-9838-8e4861a50dfc",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://postman-echo.com/status/200",
+              "protocol": "https",
+              "host": [
+                "postman-echo",
+                "com"
+              ],
+              "path": [
+                "status",
+                "200"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "82061e5c-9115-4691-9a7f-5206d2bf06ef"
+    },
+    {
+      "name": "HIGH — 50 to 69% Pass Rate",
+      "item": [
+        {
+          "name": "Test 1 — 3 Pass 2 Fail",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Check 1 — status is 200\", function () { pm.expect(pm.response.code).to.equal(200); });",
+                  "pm.test(\"Check 2 — response time OK\", function () { pm.expect(pm.response.responseTime).to.be.below(5000); });",
+                  "pm.test(\"Check 3 — has body\", function () { pm.expect(pm.response.text()).to.not.be.empty; });",
+                  "pm.test(\"Check 4 — intentional fail\", function () { pm.expect(false).to.be.true; });",
+                  "pm.test(\"Check 5 — intentional fail\", function () { pm.expect(false).to.be.true; });"
+                ],
+                "id": "392323a2-a3ed-4a0c-9522-377a8170d695"
+              }
+            }
+          ],
+          "id": "f9af9505-fd5d-4706-a93b-1da8987e40e7",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://postman-echo.com/status/200",
+              "protocol": "https",
+              "host": [
+                "postman-echo",
+                "com"
+              ],
+              "path": [
+                "status",
+                "200"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Test 2 — 3 Pass 2 Fail",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Check 1 — status is 200\", function () { pm.expect(pm.response.code).to.equal(200); });",
+                  "pm.test(\"Check 2 — response time OK\", function () { pm.expect(pm.response.responseTime).to.be.below(5000); });",
+                  "pm.test(\"Check 3 — has body\", function () { pm.expect(pm.response.text()).to.not.be.empty; });",
+                  "pm.test(\"Check 4 — intentional fail\", function () { pm.expect(false).to.be.true; });",
+                  "pm.test(\"Check 5 — intentional fail\", function () { pm.expect(false).to.be.true; });"
+                ],
+                "id": "b3f23244-23df-4dae-8994-3d2a43f71e4d"
+              }
+            }
+          ],
+          "id": "0e87eaa0-941b-43a2-b797-99c4b719d75e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://postman-echo.com/status/200",
+              "protocol": "https",
+              "host": [
+                "postman-echo",
+                "com"
+              ],
+              "path": [
+                "status",
+                "200"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "42c4810a-867a-4e21-a7b2-abcd99a3188b"
+    },
+    {
+      "name": "WARN — 70 to 89% Pass Rate",
+      "item": [
+        {
+          "name": "Test 1 — 4 Pass 1 Fail",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Check 1 — status is 200\", function () { pm.expect(pm.response.code).to.equal(200); });",
+                  "pm.test(\"Check 2 — response time OK\", function () { pm.expect(pm.response.responseTime).to.be.below(5000); });",
+                  "pm.test(\"Check 3 — has body\", function () { pm.expect(pm.response.text()).to.not.be.empty; });",
+                  "pm.test(\"Check 4 — content-type present\", function () { pm.expect(pm.response.headers.get('Content-Type')).to.not.be.null; });",
+                  "pm.test(\"Check 5 — intentional fail\", function () { pm.expect(false).to.be.true; });"
+                ],
+                "id": "34973e49-ae9a-4157-ac35-00c90e22a844"
+              }
+            }
+          ],
+          "id": "5848a1e8-23e1-4bb7-af09-13b0c7c7fc10",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://postman-echo.com/status/200",
+              "protocol": "https",
+              "host": [
+                "postman-echo",
+                "com"
+              ],
+              "path": [
+                "status",
+                "200"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Test 2 — 4 Pass 1 Fail",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Check 1 — status is 200\", function () { pm.expect(pm.response.code).to.equal(200); });",
+                  "pm.test(\"Check 2 — response time OK\", function () { pm.expect(pm.response.responseTime).to.be.below(5000); });",
+                  "pm.test(\"Check 3 — has body\", function () { pm.expect(pm.response.text()).to.not.be.empty; });",
+                  "pm.test(\"Check 4 — content-type present\", function () { pm.expect(pm.response.headers.get('Content-Type')).to.not.be.null; });",
+                  "pm.test(\"Check 5 — intentional fail\", function () { pm.expect(false).to.be.true; });"
+                ],
+                "id": "28f4ecb6-3ffa-4d21-89f4-77d22a1d1bdb"
+              }
+            }
+          ],
+          "id": "425a6638-b0b3-4f42-963c-cb61c9b3a654",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://postman-echo.com/status/200",
+              "protocol": "https",
+              "host": [
+                "postman-echo",
+                "com"
+              ],
+              "path": [
+                "status",
+                "200"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "4f35a485-dc1d-4ce0-acc9-d0429fe5502a"
+    },
+    {
+      "name": "HEALTHY — 90% or More Pass Rate",
+      "item": [
+        {
+          "name": "Test 1 — All Pass",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Check 1 — status is 200\", function () { pm.expect(pm.response.code).to.equal(200); });",
+                  "pm.test(\"Check 2 — response time OK\", function () { pm.expect(pm.response.responseTime).to.be.below(5000); });",
+                  "pm.test(\"Check 3 — has body\", function () { pm.expect(pm.response.text()).to.not.be.empty; });",
+                  "pm.test(\"Check 4 — content-type present\", function () { pm.expect(pm.response.headers.get('Content-Type')).to.not.be.null; });",
+                  "pm.test(\"Check 5 — response is JSON\", function () { pm.response.to.have.jsonBody(); });"
+                ],
+                "id": "d86b74ce-96f9-48df-b1fa-74f97c5eefab"
+              }
+            }
+          ],
+          "id": "57be9dee-fd68-468d-b23b-02c56bf1c60f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://postman-echo.com/get",
+              "protocol": "https",
+              "host": [
+                "postman-echo",
+                "com"
+              ],
+              "path": [
+                "get"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Test 2 — All Pass",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Check 1 — status is 200\", function () { pm.expect(pm.response.code).to.equal(200); });",
+                  "pm.test(\"Check 2 — response time OK\", function () { pm.expect(pm.response.responseTime).to.be.below(5000); });",
+                  "pm.test(\"Check 3 — has body\", function () { pm.expect(pm.response.text()).to.not.be.empty; });",
+                  "pm.test(\"Check 4 — content-type present\", function () { pm.expect(pm.response.headers.get('Content-Type')).to.not.be.null; });",
+                  "pm.test(\"Check 5 — response is JSON\", function () { pm.response.to.have.jsonBody(); });"
+                ],
+                "id": "ede5c071-91f6-42a1-9b6c-c15557e8fb3a"
+              }
+            }
+          ],
+          "id": "f292e40e-3464-46f1-90c0-f150665cfb5b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://postman-echo.com/get",
+              "protocol": "https",
+              "host": [
+                "postman-echo",
+                "com"
+              ],
+              "path": [
+                "get"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "e3a79043-92f1-41ea-990f-dc9109225950"
+    },
+    {
+      "name": "README — How Scorecard Severity Works",
+      "id": "6257f391-57ab-4838-addf-6f53b590eb47",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://postman-echo.com/get",
+          "protocol": "https",
+          "host": [
+            "postman-echo",
+            "com"
+          ],
+          "path": [
+            "get"
+          ]
+        },
+        "description": "## API Catalog Scorecard Severity Guide\n\n### Severity Thresholds (7-day rolling window)\n| Severity | Pass Rate |\n|---|---|\n| CRITICAL | < 50% |\n| HIGH | 50–69% |\n| WARN | 70–89% |\n| HEALTHY | ≥ 90% |\n\n### How to trigger each severity\n- Run the **CRITICAL** folder via a monitor → scorecard shows CRITICAL\n- Run the **HIGH** folder via a monitor → scorecard shows HIGH\n- Run the **WARN** folder via a monitor → scorecard shows WARN\n- Run the **HEALTHY** folder via a monitor → scorecard shows HEALTHY\n\n### Important Notes\n- Only **monitor runs** and **CI/CD runs** (Postman CLI) are ingested by API Catalog.\n- Manual / desktop runs are **not** counted.\n- The workspace must be linked to a system environment in API Catalog settings."
+      },
+      "response": []
+    }
+  ]
+}

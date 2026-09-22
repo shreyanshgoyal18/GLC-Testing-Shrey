@@ -1,10 +1,17 @@
 {
   "workspace": {
-    "id": "a78adb06-82f2-49f1-b7a7-6bb3a13b0d99"
+    "id": "90f13eae-8405-4b5c-8161-c12a1fa23327"
   },
   "entities": {
-    "collections": [],
-    "environments": [],
+    "collections": [
+      "../postman/collections/API Catalog Scorecard — Severity Demo_10000000000075-3598e526-eb01-4832-836d-ee345e205978.postman_collection.json",
+      "../postman/collections/Shreyansh PPC Main_10000000000075-9c66c379-aa4d-4e41-908a-607d919332ef.postman_collection.json"
+    ],
+    "environments": [
+      "../postman/environments/Shreyansh PPC Main_10000000000075-3c7cc17b-fe6f-4488-92e5-89bf8d15ea24.postman_environment.json",
+      "../postman/environments/PPC MAIN MOCK 2_10000000000075-d51d0b3b-ac3a-4845-8745-dc1c1e4b17c5.postman_environment.json",
+      "../postman/environments/PPC Main Mock_10000000000075-6f2c6693-f481-4314-9a9e-7733ecd02897.postman_environment.json"
+    ],
     "specs": [],
     "flows": [],
     "globals": []
