@@ -1,0 +1,37 @@
+version: 2.1
+
+jobs:
+  automated-api-tests:
+    docker:
+      - image: cimg/base:2021.04
+    steps:
+      - checkout
+
+      - run:
+          name: Set Postman Base Domain
+          command: |
+            export POSTMAN_BASE_DOMAIN=dev01.postmanlabs.com
+            echo "POSTMAN_BASE_DOMAIN=$POSTMAN_BASE_DOMAIN"
+
+      - run:
+          name: Install Postman CLI
+          command: |
+            curl -o- "https://dl-cli.pstmn-beta.io/install/unix.sh" | sh
+
+      - run:
+          name: Login using your API key
+          command: |
+            export POSTMAN_BASE_DOMAIN=dev01.postmanlabs.com
+            postman login --with-api-key $POSTMAN_API_KEY
+
+      - run:
+          name: Run Collection
+          command: |
+            export POSTMAN_BASE_DOMAIN=dev01.postmanlabs.com
+            postman collection run "10000000000196-2d395d87-f01d-4b3b-8027-cc1995a37068"
+
+workflows:
+  version: 2
+  automated-api-tests:
+    jobs:
+      - automated-api-tests
