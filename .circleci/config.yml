@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   automated-api-tests:
     docker:
-      - image: cimg/base:2021.04
+      - image: cimg/base:current
 
     environment:
       POSTMAN_BASE_DOMAIN: dev01.postmanlabs.com
