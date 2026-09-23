@@ -16,7 +16,7 @@ jobs:
       - run:
           name: Install Postman CLI
           command: |
-            curl -o- "https://dl-cli.pstmn-beta.io/install/linux64.sh" | sh
+            curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh
 
       - run:
           name: Login using your API key
