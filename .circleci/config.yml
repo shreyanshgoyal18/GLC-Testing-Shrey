@@ -12,9 +12,26 @@ jobs:
       - checkout
 
       - run:
+          name: Check Network
+          command: |
+            echo "=== curl ==="
+            curl --version
+
+            echo "=== OpenSSL ==="
+            openssl version
+
+            echo "=== DNS ==="
+            getent hosts dl-cli.pstmn-beta.io || true
+
+            echo "=== IPv4 TLS ==="
+            curl -4 -Iv --tlsv1.2 \
+              https://dl-cli.pstmn-beta.io/install/unix.sh
+
+      - run:
           name: Install Postman CLI
           command: |
-            curl -o- "https://dl-cli.pstmn-beta.io/install/unix.sh" | sh
+            curl -4 --tlsv1.2 -fsSL \
+              "https://dl-cli.pstmn-beta.io/install/unix.sh" | sh
 
       - run:
           name: Verify environment
@@ -30,7 +47,8 @@ jobs:
       - run:
           name: Run Collection
           command: |
-            postman collection run "10000000000196-2d395d87-f01d-4b3b-8027-cc1995a37068"
+            postman collection run \
+              "10000000000196-2d395d87-f01d-4b3b-8027-cc1995a37068"
 
 workflows:
   version: 2
